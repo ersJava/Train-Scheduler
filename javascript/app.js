@@ -66,4 +66,4 @@ dataRef.ref().orderByChild("dateAdded").limitToLast(1).on("child_added", functio
 });
 
 
-
+// Basically just have the starter code and firebase set up. Will need to keep working on it :( 
