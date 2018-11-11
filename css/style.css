@@ -1,0 +1,15 @@
+.jumbotron {
+    background-color: rgb(170, 188, 247);
+    text-align: center;
+    font-weight: bold;
+    color: rgb(231, 239, 247);
+}
+
+h1 {
+    color: rgb(231, 239, 247);
+}
+
+h2 {
+    font-size: 20px;
+    color: rgb(231, 239, 247);
+}

@@ -7,17 +7,92 @@
     <meta charset="UTF-8">
     <title>Sign-Up Today!</title>
 
-    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-
-    <!-- Firebase -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
     <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
 
 </head>
 
-<div class="jumbotron">
-    Hello
+<div class="container">
+    <div class="jumbotron">
+        <h1>Not the MTA</h1>
+        <h2>Never to late to dream, you are always on time. </h2>
+    </div>
 </div>
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">Current Train Schedule</div>
+        <div class="panel-body">
+            <table class="table table-condensed">
+                <thead>
+                    <tr>
+                        <th>Train Name</th>
+                        <th>Destination</th>
+                        <th>Frequency (min)</th>
+                        <th>Next Arrival</th>
+                        <th>Minutes Away</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td id="name">A-Train</td>
+                        <td id="Destination">Sugar Hill</td>
+                        <td id="Frequency">10</td>
+                        <td id="Next-Arrival">11:03</td>
+                        <td id="Min-Away">2</td>
+                    </tr>
+                    <tr>
+                        <td id="name">Seattle Express</td>
+                        <td id="Destination">Emerald City</td>
+                        <td id="Frequency">7</td>
+                        <td id="Next-Arrival">12:26</td>
+                        <td id="Min-Away">12</td>
+                    </tr>
+                    <tr>
+                        <td id="Train-Name-display"></td>
+                        <td id="Destination-display"></td>
+                        <td id="Frequency-display"></td>
+                        <td id="Next-Arrival-display"></td>
+                        <td id="Min-Away-display"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+
+<div class="container">
+    <div class="panel panel-default">
+        <div class="panel-heading">Add Train</div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label for="usr">Train Name:</label>
+                <input type="text" class="form-control" id="usr-train" name="usertrain">
+            </div>
+            <div class="form-group">
+                <label for="usr">Destination:</label>
+                <input type="text" class="form-control" id="usr-des" name="userdestination">
+            </div>
+            <div class="form-group">
+                <label for="usr">Frequency (min):</label>
+                <input type="text" class="form-control" id="usr-freq" name="userfrequency">
+            </div>
+            <div class="form-group">
+                <label for="usr">First Train Time (HH:mm - military time):</label>
+                <input type="text" class="form-control" id="usr-time" name="usertime">
+            </div>
+            <button type="submit" class="btn btn-primary" id="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+</div>
+
 
 <body>
 
