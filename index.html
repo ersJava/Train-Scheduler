@@ -7,20 +7,21 @@
     <meta charset="UTF-8">
     <title>Sign-Up Today!</title>
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+   
 </head>
-
+<body>
 <div class="container">
     <div class="jumbotron">
         <h1>Not the MTA</h1>
         <h2>Never to late to dream, you are always on time. </h2>
     </div>
 </div>
+
+<div id='clock'>8:30:01</div>
+
 
 <div class="container">
     <div class="panel panel-default">
@@ -40,9 +41,9 @@
                     <tr>
                         <td id="name">A-Train</td>
                         <td id="Destination">Sugar Hill</td>
-                        <td id="Frequency">10</td>
-                        <td id="Next-Arrival">11:03</td>
-                        <td id="Min-Away">2</td>
+                        <td id="A-Train_Frequency"></td>
+                        <td id="A-Train_Next-Arrival"></td>
+                        <td id="A-Train_Min-Away"></td>
                     </tr>
                     <tr>
                         <td id="name">Seattle Express</td>
@@ -94,10 +95,14 @@
 </div>
 
 
-<body>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="javascript/app.js"></script>
+   
 </body>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="javascript/app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
 
 </html>

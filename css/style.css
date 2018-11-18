@@ -1,15 +1,31 @@
 .jumbotron {
-    background-color: rgb(170, 188, 247);
+    background-color:  rgb(231, 239, 247);
     text-align: center;
     font-weight: bold;
-    color: rgb(231, 239, 247);
+    color: rgb(170, 188, 247);
 }
 
 h1 {
     color: rgb(231, 239, 247);
+    color:  rgb(170, 188, 247);
 }
 
 h2 {
     font-size: 20px;
     color: rgb(231, 239, 247);
+    color: rgb(170, 188, 247);
+}
+
+#clock {
+    padding: 18px;
+    text-align: center;
+    color:  rgb(170, 188, 247);
+    font-size: 28px;
+    font-weight: 530;
+     background-color: rgb(231, 239, 247);
+     width: 20%;
+     margin-left: 580px; 
+     margin-bottom: 28px;
+     border-radius: 16px;
+ 
 }
